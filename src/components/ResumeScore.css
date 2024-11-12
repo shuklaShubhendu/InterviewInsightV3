@@ -1,0 +1,114 @@
+/* ResumeScorePage.css */
+.resume-page {
+    min-height: 100vh;
+    color: white;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .resume-container {
+    max-width: 48rem;
+    width: 100%;
+    background-color: #2d2d2d;
+    border-radius: 0.5rem;
+    padding: 1.5rem;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  .resume-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+  }
+  
+  .score-circle {
+    position: relative;
+    width: 12rem;
+    height: 12rem;
+    flex-shrink: 0;
+  }
+  
+  .circle-svg {
+    width: 100%;
+    height: 100%;
+    transform: rotate(-90deg);
+  }
+  
+  .circle-background {
+    fill: none;
+    stroke: #4a4a4a;
+    stroke-width: 12;
+  }
+  
+  .circle-foreground {
+    fill: none;
+    stroke: #22c55e;
+    stroke-width: 12;
+    stroke-linecap: round;
+  }
+  
+  .score-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #22c55e;
+  }
+  
+  .suggestions {
+    flex-grow: 1;
+  }
+  
+  .suggestions-title {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    color: #22c55e;
+    text-align: center;
+  }
+  
+  .suggestions-list {
+    max-height: 16rem;
+    overflow-y: auto;
+    padding-right: 0.5rem;
+  }
+  
+  .suggestion-item {
+    display: flex;
+    align-items: start;
+    gap: 0.75rem;
+  }
+  
+  .suggestion-dot {
+    width: 0.5rem;
+    height: 0.5rem;
+    background-color: #22c55e;
+    border-radius: 50%;
+    flex-shrink: 0;
+    margin-top: 0.25rem;
+  }
+  
+  .start-button-container {
+    margin-top: 2rem;
+    text-align: center;
+  }
+  
+  .start-button {
+    background-color: #dc2626;
+    color: white;
+    font-weight: 600;
+    padding: 0.75rem 2rem;
+    border-radius: 0.5rem;
+    transition: background-color 0.2s ease;
+  }
+  
+  .start-button:hover {
+    background-color: #b91c1c;
+  }
+  

@@ -1,0 +1,17 @@
+[
+  {
+    "question": "1. Can you explain your role and responsibilities as a product intern at StudentAI?"
+  },
+  {
+    "question": "2. How did you optimize user experience for the front end of the college canteen app and college fest app?"
+  },
+  {
+    "question": "3. Can you walk us through the development process of the 3D iPhone website and the technologies you used?"
+  },
+  {
+    "question": "4. How did you handle data processing and model building for the movie recommender system project?"
+  },
+  {
+    "question": "5. Can you tell us more about your experience working with backend data storage and state management in the full-stack React Native app project?"
+  }
+]

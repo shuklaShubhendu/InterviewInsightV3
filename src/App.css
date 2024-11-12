@@ -1,0 +1,17 @@
+/* App.css */
+
+.app {
+  position: relative;
+  min-height: 100vh;
+}
+
+.logo {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  width: 250px;
+  height: auto;
+  z-index: 1000; /* Ensures the logo stays on top of other elements */
+}
+
+

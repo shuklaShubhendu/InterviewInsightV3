@@ -1,0 +1,131 @@
+body {
+
+
+  justify-content: center;
+  align-items: center;
+  background-image: url('./images/background.jpg'); /* Add your background image path */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.addUser {
+  background-color: rgba(255, 255, 255, 0.1); /* Transparent background */
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(30px); /* Blur effect */
+  -webkit-backdrop-filter: blur(50px); /* For Safari */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  width: 400px;
+  margin-top: 100px;
+  padding: 50px;
+  border-radius: 10px;
+  box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.065);
+  position: relative;
+  z-index: 1;
+}
+
+.addUserForm .inputGroup {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.addUserForm .inputGroup label {
+  margin-top: 10px;
+  color: white;
+}
+
+.inputGroup {
+  position: relative;
+  width: 100%;
+}
+
+.inputGroup .icon {
+  position: absolute;
+  right: 15px;
+  top: 25%;
+  transform: translateY(-50%);
+  font-size: 18px;
+  color: white;
+  pointer-events: none; /* Prevent interference with input */
+}
+
+.inputGroup .icons {
+  position: absolute;
+  right: 15px;
+  top: 60%;
+  transform: translateY(-50%);
+  font-size: 18px;
+  color: white;
+  pointer-events: none;
+}
+
+.addUserForm .inputGroup input {
+  margin-top: 5px;
+  padding: 10px 45px 10px 10px; /* Space for the icon */
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  background: rgba(255, 255, 255, 0.1);
+  color: white;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.inputGroup button {
+  margin-top: 20px;
+  padding: 10px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.inputGroup button:hover {
+  background-color: #0b396a;
+}
+
+.login {
+  margin-top: 30px;
+  text-align: center;
+}
+
+.login p {
+  color: white;
+  display: inline;
+  margin: 5px 5px;
+}
+
+.login .btn-success,
+.login .btn-primary {
+  font-size: larger;
+  padding: 10px 20px;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  display: inline-block;
+  margin-left: 5px;
+}
+
+.login .btn-success:hover {
+  color: rgb(224, 46, 46);
+}
+
+.login .btn-primary:hover {
+  color: rgb(245, 63, 63);
+}
+
+.addUser h2 {
+  text-align: center;
+  font-weight: bold;
+  color: darkcyan;
+  text-transform: uppercase;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7);
+}
+
+.error-message {
+  color: red;
+  font-size: 0.8em;
+  margin-top: 5px;
+}

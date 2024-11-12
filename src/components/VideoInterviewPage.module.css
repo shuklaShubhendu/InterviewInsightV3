@@ -1,0 +1,121 @@
+
+
+.controls button {
+  margin-top:10px;
+}
+.videoPage {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  /* background-color: #f4f4f9; */
+  font-family: Arial, sans-serif;
+}
+
+.videoContainer {
+  width: 80%;
+  max-width: 800px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(240, 234, 234, 0.1);
+  /* background-color: white; */
+  padding: 20px;
+}
+
+.title {
+  font-size: 2em;
+  margin-bottom: 20px;
+  color: #c87171;
+}
+
+.videoBox {
+  position: relative;
+}
+
+video {
+  width: 100%;
+  border-radius: 8px;
+}
+
+.interviewOverlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(223, 104, 104, 0.5);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.timer {
+  font-size: 1.5em;
+}
+
+.questionIndicator {
+  font-size: 1.2em;
+}
+
+.currentQuestion {
+  font-size: 1.5em;
+  margin-top: 10px;
+}
+
+.speakingIndicator,
+.recordingIndicator {
+  margin-top: 10px;
+}
+
+.recordingDot {
+    width: .5em; 
+    height:.5em; 
+    border-radius:.5em; 
+    background:red; 
+    animation:.8s blink infinite; 
+    opacity:.8; 
+}
+
+@keyframes blink {
+    from { opacity:.8; }
+    to { opacity:.2; }
+}
+
+.controls {
+    display: flex; 
+    justify-content:center; 
+    margin-top:20px; 
+}
+
+.startButton, .endButton {
+    padding:10px; 
+    border:none; 
+    border-radius:5px; 
+    cursor:pointer; 
+    transition:.3s ease; 
+}
+
+.startButton {
+    background-color:#28a745; 
+    color:white; 
+}
+
+.endButton {
+    background-color:#dc3545; 
+    color:white; 
+}
+
+.startButton:hover, .endButton:hover {
+    opacity:.8; 
+}
+
+.error {
+    color:red; 
+    margin-top:10px; 
+}
+
+.analysisResult {
+    margin-top:20px; 
+}

@@ -1,0 +1,162 @@
+/* HomePage container */
+.homepage {
+   
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    position: relative; /* Ensure relative positioning for child absolute elements */
+    overflow: hidden; /* To handle the 3D effect overflow */
+}
+
+/* Three.js canvas */
+canvas {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1; /* Set it behind all other content */
+    width: 100%;
+    height: 100%;
+}
+
+/* Upload form container */
+.upload-container {
+    align-items: center;
+    text-align: center;
+    background-color: #2b2b2b;
+    padding: 50px;
+    border-radius: 20px;
+    width: 450px;
+    height: auto;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.7);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    position: relative; /* Relative position to sit on top of the background */
+    z-index: 2; /* Ensures this container is above the background */
+    animation: fadeIn 0.7s ease-in-out;
+}
+
+/* Upload container header */
+.upload-container h2 {
+    color: #ffffff;
+    margin-bottom: 30px;
+    font-size: 1.8rem;
+    font-weight: 600;
+}
+
+/* File and text input styling */
+.upload-container input[type="file"],
+.upload-container input[type="text"] {
+    margin: 15px auto;
+    padding: 12px;
+    width: 85%;
+    border-radius: 8px;
+    border: none;
+    font-size: 1rem;
+    color: #333;
+    background-color: #f0f0f0;
+    transition: border-color 0.3s ease; /* Smooth transition for input focus */
+}
+
+/* Button styling */
+.upload-container button {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 12px;
+    width: 85%;
+    border-radius: 10px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s; /* Added transform for hover effect */
+    margin-top: 20px;
+}
+
+/* Hover effect for the button */
+.upload-container button:hover {
+    background-color: #218838;
+    transform: scale(1.05); /* Slightly enlarge button on hover */
+}
+
+/* Error input styling */
+.input-error {
+    border: 2px solid red;
+    background-color: #ffe6e6;
+}
+
+/* Error message styling */
+.error-message {
+    color: red;
+    font-size: 1rem;
+    margin-top: -10px;
+    margin-bottom: 10px;
+}
+
+/* Animation for fade-in effect */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10%);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Logout button */
+/* Add this to your existing CSS file */
+
+/* Logout button */
+/* Add this to your existing CSS file */
+
+/* Logout button */
+/* Logout button */
+/* Logout button */
+.logout-button {
+    width: 100px;
+    background-color: #d9534f;
+    color: white;
+    border: none;
+    padding: 10px 10px; /* Reduced padding for a smaller button */
+    border-radius: 5px; /* Smaller border radius */
+    font-size: 0.9rem; /* Slightly smaller font size */
+    font-weight: 600;
+    cursor: pointer;
+    position: absolute; /* Positioning it absolutely */
+    top: 20px; /* Adjust distance from the top */
+    right: 20px; /* Adjust distance from the right */
+    z-index: 3; /* Ensure it stays above other content */
+    transition: background-color 0.3s ease, transform 0.2s; /* Transition effects */
+}
+
+/* Hover effect for logout button */
+.logout-button:hover {
+    background-color: #c9302c; /* Darker shade on hover */
+    transform: scale(1.05); /* Slightly enlarge button on hover */
+}
+
+
+
+
+
+/* Responsive styling for smaller screens */
+@media (max-width: 768px) {
+    .upload-container {
+        width: 90%;
+        padding: 40px;
+    }
+
+    .upload-container h2 {
+        font-size: 1.5rem;
+    }
+
+    .upload-container button,
+    .upload-container input[type="file"],
+    .upload-container input[type="text"] {
+        width: 100%;
+    }
+}
